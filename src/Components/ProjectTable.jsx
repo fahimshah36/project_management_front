@@ -94,8 +94,9 @@ const ProjectTable = ({dataTrigger, setDataTrigger}) => {
                     danger
                     type="primary"
                     onClick={() => {
-                      deleteProject(data?._id);
-                      setDataTrigger(!dataTrigger);
+                      deleteProject(data?._id).then(() => {
+                        setDataTrigger(!dataTrigger);
+                      });
                     }}
                   >
                     Delete
