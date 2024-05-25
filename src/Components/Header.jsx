@@ -6,8 +6,8 @@ const Header = ({title}) => {
     <Typography.Title
       level={1}
       style={{
-        color: "white",
         textAlign: "center",
+        fontWeight: "bold",
       }}
     >
       {title}
