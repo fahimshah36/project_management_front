@@ -128,7 +128,8 @@ const ProjectTable = ({dataTrigger, setDataTrigger}) => {
               }}
             >
               Created At :{" "}
-              {new Date(projectData?.creationTime).toLocaleString()}
+              {projectData?.creationTime &&
+                new Date(projectData?.creationTime).toLocaleString()}
             </Typography.Text>
           </div>
         }
