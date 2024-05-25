@@ -4,8 +4,7 @@ import {createProject} from "../helpers/projectApi";
 
 const AddProject = ({setDataTrigger, dataTrigger}) => {
   const addProject = () => {
-    createProject();
-    setDataTrigger(!dataTrigger);
+    createProject().then(() => setDataTrigger(!dataTrigger));
   };
   return (
     <div>
